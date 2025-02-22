@@ -1,7 +1,5 @@
 package com.SpringBootProjects.CabBookingApp.dto;
 
-import com.SpringBootProjects.CabBookingApp.entities.Driver;
-import com.SpringBootProjects.CabBookingApp.entities.Rider;
 import com.SpringBootProjects.CabBookingApp.entities.enums.PaymentStatus;
 import com.SpringBootProjects.CabBookingApp.entities.enums.RideStatus;
 import lombok.AllArgsConstructor;
@@ -13,8 +11,8 @@ import java.time.LocalDateTime;
 @NoArgsConstructor
 @AllArgsConstructor
 public class RideDto {
-    private Rider rider;
-    private Driver driver;
+    private RiderDto rider;
+    private DriverDto driver;
     private PointDto pickupLocation;
     private PointDto dropOffLocation;
     private Double fare;

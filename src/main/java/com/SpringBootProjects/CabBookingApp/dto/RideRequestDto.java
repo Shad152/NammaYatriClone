@@ -1,5 +1,6 @@
 package com.SpringBootProjects.CabBookingApp.dto;
 
+import com.SpringBootProjects.CabBookingApp.entities.enums.RideRequestStatus;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -13,5 +14,5 @@ public class RideRequestDto {
     private PointDto pickupLocation;
     private PointDto dropOffLocation;
     private LocalDateTime requestedAt;
-
+    private RideRequestStatus rideRequestStatus;
 }
